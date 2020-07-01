@@ -1,19 +1,22 @@
 print("____________________________laba_3_osnov_3__________________________")
 from astro_constants import acceleration_of_gravity_ears as g
+import numpy as np
+
+N = 10
+A = np.zeros((N, 3))
+t = np.arange(0, 5, 0.1)
+t = np.linspace(0, 5, N)
 y0 = 1
 x0 = 2
-v0 = 1
-i = 0
-t = 0
-print("  t. x. y. ")
-import numpy as np
-A = np.zeros((500,3))
-if  t  in range (0 , 5 , 0.01):
-    x = x0 + v0 * t
-    y = y0 + v0 * t - (g * t**2) / 2
-    A = np.zeros((500,3))
-    A [i , 1] = t
-    A [i , 2] = x
-    A [i , 3] = y
-    i = i + 1
+v0 = 10
+
+
+for i in range(N):
+    x = x0 + v0 * t[i]
+    y = y0 + v0 * t[i] - (g * t[i]**2) / 2
+    
+    A[i, 0] = t[i]
+    A[i, 1] = x
+    A[i, 2] = y
+
 print(A)
