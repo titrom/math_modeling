@@ -1,0 +1,10 @@
+gravitational_constant=6.67*10**(-11)
+acceleration_of_gravity=9.8
+electron_mass=9.11*10**(-31)
+planck_constant=6.63*10**(-34)
+neutron_mass=1.675*10**(-27)
+proton_mass=1.67*10**(-27)
+avogadro_constant=6.02*10**23
+universal_gas_constant=8.31
+boltzmann_constant=1.38*10**(-23)
+faraday_constant=9.62*10**4
